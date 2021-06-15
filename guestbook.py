@@ -7,8 +7,8 @@ from datetime import datetime
 from flask import Flask, request, render_template, redirect, escape, Markup
 
 application = Flask(__name__)
-
-DATA_FILE = 'guestbook.dat'
+# 定义存储文件：guestbook.dat 默认为dat格式
+DATA_FILE = 'guestbook'
 
 
 def save_data(name, comment, create_at):
